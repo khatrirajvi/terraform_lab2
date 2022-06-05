@@ -127,3 +127,10 @@ resource "aws_eip" "static_eip" {
     }
   )
 }
+resource "aws_ecr_repository" "dogs" {
+  name = "dogs"
+}
+
+resource "aws_ecr_repository" "cats" {
+  name = "cats"
+}
